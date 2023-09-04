@@ -1,0 +1,62 @@
+name: to_do_list_app
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_native_splash: ^2.3.2
+  flutter_svg: ^2.0.7
+  smooth_page_indicator: ^1.1.0
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    #localization
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+
+  flutter_lints: ^2.0.0
+
+flutter_intl:
+   enabled: true
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Tajwal
+      fonts:
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+    - family: Lato
+      fonts:
+        - asset: assets\fonts\Lato-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Lato-Regular.ttf
+          weight: 400      
+    
+  
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

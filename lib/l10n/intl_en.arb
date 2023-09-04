@@ -1,0 +1,16 @@
+{ 
+    "@@locale" : "en",
+    "login" : "Login",
+    "register" : "Register",
+    "qiblahFinder" :"Qiblah Direction",
+    "signIn" : "Sign in",
+    "UsernameOrEmail" : "Username/Email",
+    "password" : "Password",
+    "Username" : "Username",
+    "Email" : "Email",
+    "confirmpassword" : "Confirm Password",
+    "forgetPassword" : "Forget Password?",
+    "newUser" : "New User?",
+    "signUp" : "Sign Up",
+    "alreadyHaveAccount" : "Already have an account?"
+}
