@@ -13,6 +13,7 @@ class appColor{
    static const Color PurpleColor=Color(0xff809CFF);
    static const Color RedColor=Color(0xffFF8080);
    static const Color YellowleColor=Color(0xffFFCC80);
-   
+   static const Color borderColor=Color(0xff979797);
+   static const Color sheetBackgroundColor=Color(0xff363636);
    
 }

@@ -4,6 +4,7 @@ import 'package:to_do_list_app/core_presintation/constants/app_color.dart';
 import 'package:to_do_list_app/core_presintation/constants/app_images.dart';
 import 'package:to_do_list_app/features/calendar/calendar_page.dart';
 import 'package:to_do_list_app/features/focuse/focuse_page.dart';
+import 'package:to_do_list_app/features/todo_list/add_todo_page/add_todo_page.dart';
 import 'package:to_do_list_app/features/todo_list/models/task_category.dart';
 import 'package:to_do_list_app/features/todo_list/models/todo_model.dart';
 import 'package:to_do_list_app/features/todo_list/todo_list_page.dart';
@@ -70,7 +71,16 @@ class _HomePageState extends State<HomePage> {
             height: 32,
           ),
         onPressed: (){
-          addTask();
+          //addTask();
+          showModalBottomSheet(
+            context: context, 
+            backgroundColor: appColor.sheetBackgroundColor,
+            isScrollControlled: true,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+            ),
+            builder: (context)=>const AddTodoPage(),
+            );
         }
         ),
       bottomNavigationBar: BottomNavigationBar(
@@ -110,12 +120,12 @@ class _HomePageState extends State<HomePage> {
             label: "Profile",
             ),
         ]),
-        body:_screens[_currentIndex],//_screens[_currentIndex],
+        body:_screens[_currentIndex],
     );
   }
 
 
-   addTask()=>showDialog(
+  /* addTask()=>showDialog(
     context: context,
      builder: (context)=> AlertDialog(
                   backgroundColor: appColor.DialogColor,
@@ -191,5 +201,5 @@ class _HomePageState extends State<HomePage> {
             )
   
   );
-     
+     */
 }
