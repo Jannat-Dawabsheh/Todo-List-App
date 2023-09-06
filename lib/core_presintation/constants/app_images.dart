@@ -25,4 +25,16 @@ class AppSvg{
    static const String caseIcon="assets/images/briefcase.svg";
    static const String mortaboard="assets/images/mortarboard.svg";
    static const String arrowIcon="assets/images/arrow-down.svg";
+   static const String GroceryCategoryIcon="assets/images/bread 1.svg";
+   static const String WorkCategoryIcon="assets/images/briefcase 1.svg";
+   static const String SportCategoryIcon="assets/images/sport 1.svg";
+   static const String DesignCategoryIcon="assets/images/design (1) 1.svg";
+   static const String UniversityCategoryIcon="assets/images/mortarboard 1.svg";
+   static const String SocialCategoryIcon="assets/images/megaphone 1.svg";
+   static const String MusicCategoryIcon="assets/images/music (1) 1.svg";
+   static const String HealthCategoryIcon="assets/images/heartbeat 1.svg";
+   static const String MovieCategoryIcon="assets/images/Vector.svg";
+   static const String HomeCategoryIcon="assets/images/home (2) 1.svg";
+   static const String CreateNewCategoryIcon="assets/images/add 1.svg";
+   static const String check="assets/images/check (2) 1.svg";
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:to_do_list_app/core_presintation/constants/app_color.dart';
-import 'package:to_do_list_app/features/todo_list/add_todo_page/widgets/add_todo_actions_bar.dart';
+import 'package:to_do_list_app/features/todo_request/add_todo_page/widgets/add_todo_actions_bar.dart';
 
 class AddTodoPage extends StatefulWidget {
   const AddTodoPage({super.key});
@@ -43,6 +43,9 @@ class _AddTodoPageState extends State<AddTodoPage> {
                 enabledBorder: InputBorder.none,
                 focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: appColor.borderColor, width: 1)),
                ),
+               style: const TextStyle(
+                  color: Colors.white,
+                ),
             ),
             const SizedBox(height: 14,),
             TextFormField(
@@ -56,9 +59,22 @@ class _AddTodoPageState extends State<AddTodoPage> {
                 enabledBorder: InputBorder.none,
                 focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: appColor.borderColor, width: 1)),
                ),
+               style: const TextStyle(
+                  color: Colors.white,
+                ),
             ),
             const SizedBox(height: 14,),
-            AddTodoActionBar(),
+            AddTodoActionBar(
+              onDateChange: (date){
+                print(date);
+              }, 
+              onPriorityChange: (priority) {
+                print(priority);
+              },
+              onCategoryChange: (category) { 
+                print(category);
+              },
+            ),
         ],
       ),
     );
